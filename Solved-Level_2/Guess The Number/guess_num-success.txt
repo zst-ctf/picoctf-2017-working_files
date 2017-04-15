@@ -1,0 +1,10 @@
+zst123@shell-web:~$ gdb guess_num
+(gdb) break win
+Breakpoint 1 at 0x8048531
+
+// win() function is at address 0x8048531
+// since the code does val >>4
+// we must input 0x8048531 << 4 = 2152223504 decimal
+
+// strtol accepts 2147483647 max value,
+// hence, overflow to the number we calculated can be expressed as overflow of -2142743791

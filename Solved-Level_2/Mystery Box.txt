@@ -1,0 +1,17 @@
+//EMULATOR
+http://enigma.louisedade.co.uk/enigma.html
+
+
+http://www.cryptomuseum.com/crypto/enigma/working.htm
+http://cryptomuseum.com/crypto/enigma/m3/index.htm
+http://enigma.louisedade.co.uk/howitworks.html
+
+Geheimnis: PXQQ TAMY YDBC WGYE LVN
+Umkehrwalze: B
+Grundstellung: PPP
+Ringstellung: LOG
+Steckerbrett: G-L, H-F
+
+
+//OUTPUT
+QUIT EPUZ ZLIN GIND EED

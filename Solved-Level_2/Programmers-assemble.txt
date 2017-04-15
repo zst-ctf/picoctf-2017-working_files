@@ -1,0 +1,47 @@
+.global main
+
+main:
+    mov $XXXXXXX, %eax
+    mov $0, %ebx
+    mov $0x6, %ecx
+loop:
+    test %eax, %eax
+    jz fin
+    add %ecx, %ebx
+    dec %eax
+    jmp loop
+fin:
+    cmp $0x86a0, %ebx
+    je good
+    mov $0, %eax
+    jmp end
+good:
+    mov $1, %eax
+end:
+    ret
+
+
+
+
+//psuedocode of the above!
+
+main:
+eax = starting numb
+eab = 0
+ecx = 0x6
+
+loop:
+if eax == 0 then goto fin
+else continue loop
+ebx += ecx
+eax--
+goto loop
+
+fin:
+if ebx == 0x86a0
+return 1
+else 
+return 0
+
+
+Hence, eax = 0x86a0 / 0x6 = 0x1670 (answer!)

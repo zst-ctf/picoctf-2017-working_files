@@ -1,0 +1,10 @@
+Manzels-MacBook-Pro:pico manzelseet$ sqlite3 cookies.sqlite
+SQLite version 3.8.10.2 2015-05-20 18:17:19
+Enter ".help" for usage hints.
+sqlite> .mode column
+sqlite> .headers on
+sqlite> select * from moz_cookies;
+id          baseDomain  appId       inBrowserElement  name        value                   host        path        expiry      lastAccessed      creationTime      isSecure    isHttpOnly
+----------  ----------  ----------  ----------------  ----------  ----------------------  ----------  ----------  ----------  ----------------  ----------------  ----------  ----------
+1           localhost   0           0                 ID          F3MAqpWxIvESiUNLHsflVd  localhost   /           1489365457  1489279130600290  1489279057101857  0           0         
+
